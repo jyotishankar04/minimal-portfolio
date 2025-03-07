@@ -31,7 +31,7 @@ const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
       clearInterval(interval);
       setIsVisible(false); // Trigger exit animation
       setTimeout(() => onComplete(), 500); // Delay the onComplete callback until the animation finishes
-    }, 500); // Total duration of the loader
+    }, 3000); // Total duration of the loader
 
     return () => {
       clearInterval(interval);
